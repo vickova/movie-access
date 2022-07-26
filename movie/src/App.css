@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Belleza", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+}
+h3{
+	font-size: 1.8rem;
+}
+span {
+  color: rgb(2, 2, 159);
+  font-family: "Lobster", cursive;
+}
+.MuiPagination-ul{
+	display: flex;
+	gap: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(93, 90, 90);
+  margin: 0;
+}
+p{
+	font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+select {
+  width: 100px;
+  height: 20px;
+}
+button {
+  height: 50px;
+  width: 120px;
+  margin: 2rem 0;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button:hover {
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+  border: 3px solid black;
+}
+#movie-link {
+  margin: 4rem 0;
+  padding: 0.5rem 0;
+}
+#movie-link:hover {
+  background-color: #e1e2e2;
+  color: gray;
+  cursor: pointer;
+  border: 3px solid black;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+}
+.movie-cover {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie-card {
+  background-color: #e1e2e2;
+  border-radius: 15px 15px 0 0;
+  width: 450px;
+  margin: 1rem;
+}
+.movie-card:hover {
+  background-color: gray;
+}
+
+.movie-card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+.movie-text {
+  padding: 2rem;
+}
+
+.moviedetails-cover {
+  display: flex;
+  justify-content: center;
+}
+
+.moviedetails-card {
+  background-color: #e1e2e2;
+  margin: 1rem 2rem;
+}
+.moviedetails-card img {
+  width: 100%;
+  background-size: cover;
+}
+.moviedetails-text {
+  padding: 2rem;
+}
+@media screen and (max-width: 685px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 2rem;
+  }
+  #nav {
+    display: none;
+  }
+  li button{
+	width: 45px;
+	}
+  #menu {
+    display: block;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  #exit {
+    margin: 2rem;
+    cursor: pointer;
+  }
+
+  .header nav {
+    position: fixed;
+    right: 2rem;
+    height: 100%;
+    right: 0;
+  }
+  .header nav img {
+    width: 30px;
+  }
+  .header nav ul {
+    display: none;
+    background-color: rgb(63, 61, 61);
+    height: 100%;
+    top: 0;
+    animation: slide 2s timing-function delay iteration-count direction
+      fill-mode;
+  }
+  .header nav li {
+    list-style: none;
+    margin: 3rem 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #fff;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .movie-card {
+    width: 90%;
+  }
+  footer {
+    display: block;
+  }
+  .footer-text {
+    display: block;
+  }
+  .footer-cover {
+    margin: 0;
+  }
+  .footer-cover a {
+    margin: 0;
+  }
+}
